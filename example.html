@@ -2,10 +2,17 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <style>
+    body{
+      margin: 0px;
+      padding: 0px;
+    }
+    
+  </style>
   <title>Example Test</title>
 </head>
 
-<body>
+  <body>
    <header>
       <div class="container">
         <h1>Bluepug Example test page</h1>
@@ -16,6 +23,15 @@
         </section>
       </div>
     </header>
-</body>
-
+    
+    <canvas id="mycanvas" width="578" height="200"></canvas>
+    <script>
+      var canvas = document.getElementByID('mycanvas');
+      var context = canvas.getContext('2d');
+      
+      context.font = "40pt Calibri";
+      context.fillStyle = "blue";
+      context.fillText("Hello World!", 150, 100);
+    </script>
+  </body>
 </html>
